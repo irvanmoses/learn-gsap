@@ -6,13 +6,14 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "npx eslint src",
-    "lint:fix": "npm run lint -- --fix",
-    "prettier": "npx prettier src --check",
-    "prettier:fix": "npm run prettier -- --write",
-    "format": "npm run prettier:fix && npm run lint:fix"
+    "lint": "yarn eslint src",
+    "lint:fix": "yarn run lint -- --fix",
+    "prettier": "yarn prettier src --check",
+    "prettier:fix": "yarn run prettier -- --write",
+    "format": "yarn run prettier:fix && yarn run lint:fix"
   },
   "dependencies": {
+    "gsap": "^3.11.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
